@@ -1,1 +1,40 @@
 // Navigation code here
+header{
+    .head-mix();
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    .flex-mix(column, center);
+    
+    nav{
+        width: 800px;
+        display: flex;
+        .flex-mix(column, center);
+        
+        .logo{
+            font-size: 3.5rem;
+        }
+        .links{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2rem;
+            width: 100%;
+            a{
+                text-decoration: none;
+                margin-top: 2%;
+                color: black;
+                &:hover{
+                    color: blue;
+                }
+            }
+        }
+    }
+    @media @phone{
+        nav{
+            width: 100%;
+            .links{
+                width: 100%;
+            }
+        }
+    }
+}
